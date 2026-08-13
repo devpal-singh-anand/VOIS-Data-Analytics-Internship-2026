@@ -1,0 +1,49 @@
+# ---------------------------------------------------------------
+# .gitignore for VOIS-Data-Analytics-Internship-2026
+# Notebooks (.ipynb), slides (.pptx) and certificates (.pdf) are
+# project deliverables, so they are NOT ignored.
+# ---------------------------------------------------------------
+
+# Jupyter / Google Colab
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Environment files and secrets
+.env
+.env.*
+*.key
+
+# Microsoft Office temporary/lock files
+~$*
+*.tmp
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+._*
+
+# Linux
+*~
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log

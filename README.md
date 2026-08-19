@@ -56,7 +56,7 @@ Completed courses follow a consistent structure:
 
 ```text
 Course/
-├── lectures.md
+├── lecture.md
 ├── assessment.md
 └── certificate.pdf
 ```

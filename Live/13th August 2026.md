@@ -1,5 +1,3 @@
-Yep bro 😭 — no tool, no extra analysis. Here’s the **ready-to-paste `Live/13th August 2026.md`**.
-
 # Data Analytics — Day 1
 
 **Date:** 13 August 2026

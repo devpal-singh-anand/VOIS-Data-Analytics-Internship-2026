@@ -1,6 +1,3 @@
-You're right bro. I accidentally broke out of the Markdown code block. Here is the **entire file as one continuous `.md` code block**, so you can copy it directly into `lectures.md`.
-
-````md
 # Getting Started with Linux File System
 
 ## Course Instructions

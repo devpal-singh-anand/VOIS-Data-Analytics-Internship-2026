@@ -1,9 +1,9 @@
 # Data Analytics — Day 1
 
-**Program:** VOIS FOR TECH LD AICTE Internship Program
-**Session:** Data Analytics — Day 1
-**Date:** 13 August 2026
-**Mode:** Live Lecture
+**Program:** VOIS FOR TECH LD AICTE Internship Program<br>
+**Session:** Data Analytics — Day 1<br>
+**Date:** 13 August 2026<br>
+**Mode:** Live Lecture<br>
 
 ---
 

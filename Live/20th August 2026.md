@@ -1,65 +1,75 @@
-Large Language Models & Data Analytics — Day 2
+# Large Language Models & Data Analytics — Day 2
 
-Date: 20 August 2026
-Program: VOIS FOR TECH LD AICTE Internship Program
-Session: Data Analytics — Day 2
-Mode: Live Lecture + Practical Session
+**Program:** VOIS FOR TECH LD AICTE Internship Program
+**Session:** Data Analytics — Day 2
+**Date:** 20 August 2026
+**Mode:** Live Lecture + Practical Session
 
-1. Introduction to Language Models
+---
+
+## Table of Contents
+
+1. [Introduction to Language Models](#1-introduction-to-language-models)
+2. [What is an LLM?](#2-what-is-an-llm)
+3. [How Does an LLM Learn?](#3-how-does-an-llm-learn)
+4. [Understanding Parameters](#4-understanding-parameters)
+5. [Parameters and Model Capability](#5-parameters-and-model-capability)
+6. [SLM — Small Language Model](#6-slm--small-language-model)
+7. [AI and Agriculture](#7-ai-and-agriculture)
+8. [Practical — Crop Recommendation Analysis](#8-practical--crop-recommendation-analysis)
+9. [Google Colab](#9-google-colab)
+10. [Pandas](#10-pandas)
+11. [Exploratory Data Analysis (EDA)](#17-exploratory-data-analysis--eda)
+12. [Univariate / Bivariate / Multivariate Analysis](#18-univariate-analysis)
+13. [Visualizations: Histograms, Bins, Bar Charts, Violin Plots](#22-histograms)
+14. [Outliers](#28-outliers)
+15. [Final Revision Sheet](#final-revision-sheet)
+
+---
+
+## 1. Introduction to Language Models
 
 The session began with an introduction to Language Models and how modern Artificial Intelligence systems learn from data.
 
-A language model is an AI model that learns patterns from language and can use those patterns to predict or generate text.
+> A **language model** is an AI model that learns patterns from language and can use those patterns to predict or generate text.
 
-The discussion then moved toward:
+Topics covered:
 
-Language Models
-Large Language Models (LLMs)
-Small Language Models (SLMs)
-Parameters
-How models learn internally
+- Language Models
+- Large Language Models (LLMs)
+- Small Language Models (SLMs)
+- Parameters
+- How models learn internally
 
-The important idea was that an AI model does not learn in exactly the same way that a human memorizes information.
+**Key idea:** An AI model does not learn in exactly the same way that a human memorizes information. Instead, the model learns patterns and relationships from training data through its internal parameters.
 
-Instead, the model learns patterns and relationships from training data through its internal parameters.
+---
 
-2. What is an LLM?
-LLM = Large Language Model
+## 2. What is an LLM?
+
+**LLM = Large Language Model**
 
 A Large Language Model is a language model containing a very large number of learned parameters and trained on large amounts of data.
 
 LLMs can perform tasks such as:
 
-Understanding text
-Generating text
-Answering questions
-Summarizing information
-Translating languages
-Generating code
-Analyzing text
+- Understanding text
+- Generating text
+- Answering questions
+- Summarizing information
+- Translating languages
+- Generating code
+- Analyzing text
 
-Examples of applications include AI chatbots and coding assistants.
+**Examples of applications:** AI chatbots, coding assistants.
 
-The session focused particularly on understanding what happens internally when these models learn.
+---
 
-3. How Does an LLM Learn?
+## 3. How Does an LLM Learn?
 
-One of the major discussions of the session was:
+During training, the model processes large amounts of data, makes predictions, and adjusts its internal values so that future predictions improve. These internal learned values are called **parameters**.
 
-How does an LLM actually learn internally?
-
-During training, the model processes large amounts of data.
-
-It makes predictions and adjusts its internal values so that its future predictions become better.
-
-These internal learned values are called:
-
-Parameters
-
-Therefore, parameters are an important part of how the model stores what it has learned about patterns in the training data.
-
-A simplified representation is:
-
+```
 Training Data
       ↓
 Model processes patterns
@@ -71,122 +81,83 @@ Adjust Parameters
 Better Predictions
       ↓
 Learned Model
-4. Understanding Parameters
+```
 
-A parameter is an internal value that is adjusted during the training of a machine learning model.
+---
 
-Large language models can contain millions, billions, or even more parameters.
+## 4. Understanding Parameters
 
-These parameters allow the model to represent complex patterns learned from its training data.
+A **parameter** is an internal value that is adjusted during the training of a machine learning model. Large language models can contain millions, billions, or even more parameters, allowing them to represent complex patterns learned from training data.
 
-Simple Analogy — IQ and Training
+### Analogy — IQ and Training
 
-The instructor explained the concept using an analogy involving IQ and learning.
+Imagine two people learning the same concept:
 
-Imagine two people learning the same concept.
+- One person may understand it after a small amount of training.
+- Another may require considerably more training.
 
-One person may understand the concept after a small amount of training.
+Similarly, AI models have internal parameters adjusted during training to help them learn patterns.
 
-Another person may require considerably more training.
+> **More parameters → greater potential learning/model capacity**
 
-Similarly, AI models have internal parameters that are adjusted during training to help them learn patterns.
+⚠️ However, more parameters alone does not guarantee a better model. Training data, architecture, and training quality also matter.
 
-The session used the simplified analogy:
+---
 
-More parameters → greater potential learning/model capacity
+## 5. Parameters and Model Capability
 
-However, the number of parameters alone does not guarantee that a model will always be better. Training data, architecture, training quality, and other factors also matter.
+```
+Smaller Model → Fewer Parameters → Lower Model Capacity
+Larger Model  → More Parameters  → Greater Potential Capacity
+```
 
-5. Parameters and Model Capability
+**Core concept:** Parameters are the internal values through which the model learns and represents patterns.
 
-A model with more parameters can potentially represent more complex patterns.
+---
 
-For example:
+## 6. SLM — Small Language Model
 
-Smaller Model
-      ↓
-Fewer Parameters
-      ↓
-Lower Model Capacity
+**SLM = Small Language Model** — a smaller language model designed with fewer parameters compared with large language models.
 
-Compared with:
+| Model Type | Meaning | General Characteristic |
+|---|---|---|
+| SLM | Small Language Model | Smaller and more lightweight |
+| LLM | Large Language Model | Larger and more capable of handling complex patterns |
 
-Larger Model
-      ↓
-More Parameters
-      ↓
-Greater Potential Capacity
+Smaller models are useful when efficiency, speed, resource requirements, or deployment constraints matter — not every application needs the largest possible model.
 
-The important concept discussed was:
+---
 
-Parameters are the internal values through which the model learns and represents patterns.
+## 7. AI and Agriculture
 
-6. SLM — Small Language Model
+Agriculture generates large amounts of environmental and soil data, including:
 
-The session also introduced the concept of SLMs.
+- Nitrogen, Phosphorus, Potassium
+- Temperature, Humidity
+- pH
+- Rainfall
 
-SLM = Small Language Model
+These factors can be analyzed to support better agricultural decisions — leading into the practical: **Crop Recommendation Analysis**.
 
-An SLM is a smaller language model designed with fewer parameters compared with large language models.
+---
 
-A simplified comparison is:
+## 8. Practical — Crop Recommendation Analysis
 
-Model Type	Meaning	General Characteristic
-SLM	Small Language Model	Smaller and more lightweight
-LLM	Large Language Model	Larger and more capable of handling complex patterns
+The practical focused on a Crop Recommendation Analysis dataset, analyzed in Google Colab using:
 
-Smaller models can be useful when efficiency, speed, resource requirements, or deployment constraints are important.
+- Python
+- Pandas / DataFrames
+- Statistical analysis
+- Data visualization
+- Exploratory Data Analysis (EDA)
 
-Therefore, not every AI application necessarily needs the largest possible model.
+---
 
-7. AI and Agriculture
+## 9. Google Colab
 
-After discussing language models and parameters, the session connected AI/data analysis concepts with agriculture.
+Google Colab is a browser-based environment for executing Python code, useful for data analytics since libraries like Pandas and visualization tools can run directly in notebooks.
 
-Agriculture generates large amounts of data related to environmental and soil conditions.
-
-Examples include:
-
-Nitrogen
-Phosphorus
-Potassium
-Temperature
-Humidity
-pH
-Rainfall
-
-These factors can be analyzed to understand agricultural conditions and support better decisions.
-
-This led to the practical activity on:
-
-Crop Recommendation Analysis
-
-8. Practical — Crop Recommendation Analysis
-
-The practical session focused on a Crop Recommendation Analysis dataset.
-
-The dataset was provided during the session and analyzed using Google Colab.
-
-The objective was to explore the agricultural data and understand the relationships and distributions of the different features.
-
-The practical involved using:
-
-Python
-Pandas
-DataFrames
-Statistical analysis
-Data visualization
-Exploratory Data Analysis (EDA)
-9. Google Colab
-
-The practical work was performed using Google Colab.
-
-Google Colab provides a browser-based environment where Python code can be executed.
-
-It is useful for data analytics because libraries such as Pandas and visualization libraries can be used directly inside notebooks.
-
-The practical workflow was broadly:
-
+```
 Open Google Colab
        ↓
 Load Dataset
@@ -204,437 +175,168 @@ Visualize Data
 Analyze Patterns
        ↓
 Identify Outliers
-10. Pandas
+```
 
-Pandas is an important Python library used for data manipulation and analysis.
+---
 
-It provides data structures such as:
+## 10. Pandas
 
-DataFrame
+**Pandas** is a Python library for data manipulation and analysis, providing the **DataFrame** structure (a table of rows and columns).
 
-A DataFrame can be thought of as a table containing rows and columns.
-
-For example:
-
+```python
 import pandas as pd
 
-A dataset can then be loaded into a DataFrame.
-
 df = pd.read_csv("dataset.csv")
+```
 
-Here:
+- `pd` → Pandas
+- `df` → DataFrame containing the dataset
 
-pd → Pandas
-df → DataFrame containing the dataset
-11. Understanding the DataFrame
+### 10.1 Viewing the DataFrame
 
-The variable df was used to work with the dataset.
+```python
+df           # view full DataFrame
+df.head()    # first few rows
+df.tail()    # last few rows
+```
 
-Simply displaying:
+### 10.2 Dataset Shape
 
-df
+```python
+df.shape     # (rows, columns), e.g. (1000, 8)
+```
 
-allows us to view the DataFrame.
+### 10.3 Dataset Information
 
-This gives us an initial understanding of:
-
-Rows
-Columns
-Values
-Features
-Dataset structure
-
-Before performing analysis, it is important to first understand what data we actually have.
-
-12. First Rows of the Dataset
-
-The first few rows can be viewed using:
-
-df.head()
-
-This is useful for quickly checking:
-
-Column names
-Sample values
-Data format
-Whether the dataset loaded correctly
-
-Similarly:
-
-df.tail()
-
-can be used to view the last few rows.
-
-13. Dataset Shape
-
-The dimensions of a DataFrame can be checked using:
-
-df.shape
-
-The result is represented as:
-
-(rows, columns)
-
-For example:
-
-(1000, 8)
-
-would mean:
-
-1000 rows
-8 columns
-
-The important point is:
-
-shape tells us the size of the dataset in terms of rows and columns.
-
-14. Dataset Information — df.info()
-
-The session also covered:
-
+```python
 df.info()
+```
 
-This provides a structural overview of the DataFrame.
+Shows: number of entries, column names, non-null counts, data types, memory usage.
 
-It can show:
+### 10.4 Data Types
 
-Number of entries
-Column names
-Non-null counts
-Data types
-Memory usage
+- **Numerical data** — e.g. Temperature, Humidity, Rainfall, pH
+- **Categorical data** — e.g. Crop names, categories, labels
 
-This is useful because before analyzing a dataset, we need to know what type of information each column contains.
+### 10.5 Statistical Summary
 
-15. Data Types
-
-Different columns can contain different types of data.
-
-For example:
-
-Numerical Data
-
-Examples:
-
-Temperature
-Humidity
-Rainfall
-pH
-
-These contain numerical values.
-
-Categorical Data
-
-Examples:
-
-Crop names
-Categories
-Labels
-
-These represent groups or categories rather than continuous numerical measurements.
-
-Understanding the data type is important because different types of data require different analysis and visualization techniques.
-
-16. Statistical Summary — df.describe()
-
-The session also covered:
-
+```python
 df.describe()
+```
 
-This provides a statistical summary of numerical columns.
+| Statistic | Meaning |
+|---|---|
+| count | Number of observations |
+| mean | Average |
+| std | Standard deviation |
+| min | Minimum value |
+| 25% | First quartile |
+| 50% | Median |
+| 75% | Third quartile |
+| max | Maximum value |
 
-It can include:
+---
 
-Statistic	Meaning
-count	Number of observations
-mean	Average
-std	Standard deviation
-min	Minimum value
-25%	First quartile
-50%	Median
-75%	Third quartile
-max	Maximum value
+## 11. Exploratory Data Analysis (EDA)
 
-This allows us to quickly understand the numerical characteristics of the dataset.
+**EDA** = the process of exploring and understanding a dataset before making conclusions or building models.
 
-For example, looking at the minimum and maximum temperature can immediately show the range of observed temperatures.
+Goal: discover patterns, distributions, relationships, trends, unusual observations, outliers, and important variables.
 
-17. Exploratory Data Analysis — EDA
+```
+Dataset → Understand Structure → Statistics → Visualization
+        → Relationships → Outliers → Insights
+```
 
-A major part of the practical was Exploratory Data Analysis (EDA).
+### 11.1 Univariate Analysis (*Uni = One*)
 
-EDA = Exploratory Data Analysis
+Analyzing **one** variable at a time (e.g. Temperature: min, max, average, distribution, outliers).
+**Main question:** What does this one variable look like?
 
-EDA is the process of exploring and understanding a dataset before making conclusions or building models.
+### 11.2 Bivariate Analysis (*Bi = Two*)
 
-The goal is to discover:
+Studies the relationship between **two** variables (e.g. Temperature ↕ Humidity, Rainfall ↕ Crop).
+**Main question:** How are these two variables related?
 
-Patterns
-Distributions
-Relationships
-Trends
-Unusual observations
-Outliers
-Important variables
+### 11.3 Multivariate Analysis (*Multi = Many*)
 
-A simplified workflow is:
+Analyzing **multiple** variables together (e.g. Nitrogen, Phosphorus, Potassium, Temperature, Humidity, pH, Rainfall → Crop Recommendation).
+**Main question:** How do multiple variables interact or relate to the outcome?
 
-Dataset
-   ↓
-Understand Structure
-   ↓
-Statistics
-   ↓
-Visualization
-   ↓
-Relationships
-   ↓
-Outliers
-   ↓
-Insights
-18. Univariate Analysis
+### 11.4 Summary Table
 
-The session covered Univariate Analysis.
+| Analysis | Number of Variables | Main Question |
+|---|---|---|
+| Univariate | 1 | What does this variable look like? |
+| Bivariate | 2 | How are these two variables related? |
+| Multivariate | 3+ | How do multiple variables interact? |
 
-The word:
+**Easy way to remember:** Uni → One, Bi → Two, Multi → Many
 
-Uni = One
+---
 
-Therefore, univariate analysis means analyzing one variable at a time.
+## 12. Visualization Techniques
 
-Example
+### 12.1 Histograms
 
-Suppose we analyze only:
+Represents numerical values grouped into ranges called **bins**, showing how many observations fall into each range.
 
-Temperature
+### 12.2 Bins
 
-We may investigate:
+A **bin** is a range/interval used to group numerical values in a histogram.
 
-Minimum temperature
-Maximum temperature
-Average temperature
-Distribution of temperature
-Potential outliers
+Example data: `12, 14, 16, 18, 21, 22, 24, 27, 29`
 
-Similarly, we could analyze only humidity.
-
-Main Question
-
-What does this one variable look like?
-
-Histograms and other distribution visualizations can be useful for univariate analysis.
-
-19. Bivariate Analysis
-
-The session also covered Bivariate Analysis.
-
-The word:
-
-Bi = Two
-
-Bivariate analysis studies the relationship between two variables.
-
-For example:
-
-Temperature
-      ↕
-Humidity
-
-Or:
-
-Rainfall
-    ↕
-Crop
-
-The purpose is to understand whether two variables have some relationship or pattern.
-
-Main Question
-
-How are these two variables related?
-
-Depending on the types of variables, visualizations such as scatter plots or bar charts can be used.
-
-20. Multivariate Analysis
-
-The third concept was Multivariate Analysis.
-
-The word:
-
-Multi = Many
-
-Multivariate analysis involves analyzing multiple variables together.
-
-In the crop recommendation dataset, multiple agricultural factors can be considered simultaneously.
-
-For example:
-
-Nitrogen
-Phosphorus
-Potassium
-Temperature
-Humidity
-pH
-Rainfall
-      ↓
-Crop Recommendation
-
-This is useful because agricultural decisions generally depend on multiple factors rather than only one variable.
-
-Main Question
-
-How do multiple variables interact or relate to the outcome?
-
-21. Univariate vs Bivariate vs Multivariate
-Analysis	Number of Variables	Main Question
-Univariate	1	What does this variable look like?
-Bivariate	2	How are these two variables related?
-Multivariate	3+	How do multiple variables interact?
-Easy Way to Remember
-Uni       → One
-Bi        → Two
-Multi     → Many
-22. Histograms
-
-Histograms were also used to understand the distribution of numerical data.
-
-A histogram represents numerical values using ranges called bins.
-
-For example, temperature data could be divided into:
-
-10–15
-15–20
-20–25
-25–30
-30–35
-
-The histogram then counts how many observations fall into each range.
-
-23. What Are Bins?
-
-A bin is a range or interval used to group numerical values in a histogram.
-
-Suppose we have:
-
-12, 14, 16, 18, 21, 22, 24, 27, 29
-
-We could create bins such as:
-
-10–15
-15–20
-20–25
-25–30
-
-The values are grouped into their corresponding ranges.
-
-The histogram then displays the number of observations in each range.
-
-Conceptually:
-
+```
 10–15    ███
 15–20    ██
 20–25    ███
 25–30    ███
+```
 
-Therefore:
+**Number of bins effect:**
 
-Bins divide continuous numerical data into ranges so that its distribution can be visualized.
+| Fewer Bins | More Bins |
+|---|---|
+| Large ranges | Smaller ranges |
+| Simpler visualization | More detail |
+| Less detail | Potentially more noise |
 
-24. Number of Bins
+### 12.3 Bar Chart vs Histogram
 
-The number of bins affects how a histogram looks.
+| | Bar Chart | Histogram |
+|---|---|---|
+| Data | Mainly categorical | Numerical |
+| X-axis | Categories | Numerical intervals/bins |
+| Purpose | Compare categories | Show distribution |
+| Bars | Usually separated by gaps | Normally touch |
+| Example | Crop names | Temperature ranges |
 
-Fewer Bins
-Large ranges
-↓
-Simpler visualization
-↓
-Less detail
-More Bins
-Smaller ranges
-↓
-More detail
-↓
-Potentially more noise
-
-Therefore, selecting a suitable number of bins helps produce a useful representation of the data distribution.
-
-25. Bar Chart vs Histogram
-
-The session also discussed the difference between bar charts and histograms.
-
-Although they look visually similar, they represent different types of information.
-
-	Bar Chart	Histogram
-Data	Mainly categorical	Numerical
-X-axis	Categories	Numerical intervals/bins
-Purpose	Compare categories	Show distribution
-Bars	Usually separated by gaps	Normally touch
-Example	Crop names	Temperature ranges
-Bar Chart
-
-A bar chart can be used to compare categorical values.
-
-Example:
-
+**Bar Chart example:**
+```
 Rice     ███████
 Wheat    █████
 Maize    ███
+```
 
-The categories are independent.
-
-Therefore, gaps between bars can be used.
-
-Histogram
-
-A histogram represents continuous numerical ranges.
-
+**Histogram example:**
+```
 10–15   ███
 15–20   █████
 20–25   ███████
 25–30   ████
+```
 
-The bins represent connected numerical intervals.
+### 12.4 Data Distribution
 
-Therefore:
+A **distribution** shows how a variable's values are spread across its possible range — useful for identifying where observations are concentrated and revealing extreme values. Examined for: Temperature, Humidity, Rainfall, pH, nutrient values.
 
-Histogram bars normally touch because the numerical intervals are continuous.
+### 12.5 Violin Plot
 
-26. Data Distribution
+Combines distribution information with a box-plot-like summary, showing distribution, spread, density, central region, and potential unusual observations. Wider sections = more concentrated observations.
 
-The histograms helped in understanding the distribution of different numerical features.
-
-A distribution shows how the values of a variable are spread across its possible range.
-
-For example, we can investigate the distribution of:
-
-Temperature
-Humidity
-Rainfall
-pH
-Nutrient values
-
-This helps identify where most observations are concentrated.
-
-It can also help reveal unusual or extreme values.
-
-27. Violin Plot
-
-Another visualization covered during the session was the Violin Plot.
-
-A violin plot combines information about the distribution of numerical data with the visual structure of a box-plot-like summary.
-
-It can help us understand:
-
-Distribution
-Spread
-Density
-Central region of the data
-Potential unusual observations
-
-The width of the violin represents the density of observations at different values.
-
-For example:
-
+```
       ╭──╮
      ╭╯  ╰╮
     ╭╯    ╰╮
@@ -642,352 +344,190 @@ For example:
     ╰╮    ╭╯
      ╰╮  ╭╯
       ╰──╯
+```
 
-A wider section indicates that more observations are concentrated around that region.
+**Why useful:** A box plot gives a compact summary, while a violin plot adds information about shape and density.
 
-Why Violin Plots Are Useful
+### 12.6 Visualization Use Cases
 
-A box plot provides a compact summary, while a violin plot can provide additional information about the shape and density of the distribution.
+| Visualization | Useful For |
+|---|---|
+| Bar Chart | Comparing categories |
+| Histogram | Numerical distribution |
+| Violin Plot | Distribution and density |
+| Box Plot | Spread and potential outliers |
 
-Therefore:
+---
 
-Violin plots are useful for understanding the distribution and density of numerical data.
+## 13. Outliers
 
-28. Outliers
+An **outlier** is a value unusually far from the general pattern of observations.
 
-The practical also involved identifying outliers.
+**During the crop recommendation analysis**, potential outliers were identified in:
+- Temperature
+- Humidity
 
-An outlier is a value that is unusually far from the general pattern of the observations.
+### 13.1 Why Outliers Matter
 
-For example, if most temperature values are within a particular range but a few observations are extremely high or low, those observations may be potential outliers.
+Outliers can influence:
+- Mean
+- Range
+- Standard deviation
+- Distribution
+- Visualization
 
-During the crop recommendation analysis, potential outliers were identified in:
+⚠️ An outlier does **not** automatically mean the data is wrong — it may represent a genuine environmental condition. Outliers should be investigated before deciding what to do with them.
 
-Temperature
-Humidity
-29. Why Outliers Matter
+### 13.2 Outlier Detection Process
 
-Outliers can influence statistical analysis and visualizations.
+```
+Analyze Temperature → Visualize Distribution → Identify Potential Outliers
+Analyze Humidity     → Visualize Distribution → Identify Potential Outliers
+```
 
-For example, an extreme value can affect:
+---
 
-Mean
-Range
-Standard deviation
-Distribution
-Visualization
+## 14. Overall EDA Workflow
 
-However:
+```
+Load Dataset → Create DataFrame → Inspect Data
+     → df.head() → df.shape → df.info() → df.describe()
+     → Understand Data Types → EDA
+     → Univariate → Bivariate → Multivariate
+     → Visualization
+     → Histograms/Bins → Bar Charts → Violin Plots
+     → Outlier Analysis (Temperature & Humidity)
+     → Interpret Insights
+```
 
-An outlier does not automatically mean that the data is wrong.
+---
 
-An unusually high temperature or humidity value may represent a genuine environmental condition.
+## 15. AI/ML and Agriculture
 
-Therefore, outliers should be investigated before deciding what to do with them.
-
-30. Outliers in the Crop Dataset
-
-During the practical, the temperature and humidity distributions were examined to identify unusual observations.
-
-The process can be summarized as:
-
-Analyze Temperature
-        ↓
-Visualize Distribution
-        ↓
-Identify Potential Outliers
-        ↓
-Analyze Humidity
-        ↓
-Visualize Distribution
-        ↓
-Identify Potential Outliers
-
-This demonstrated how visualization can help us notice unusual patterns that may not be obvious from looking at raw values alone.
-
-31. Data Visualization in EDA
-
-The practical demonstrated that different visualizations answer different questions.
-
-Visualization	Useful For
-Bar Chart	Comparing categories
-Histogram	Numerical distribution
-Violin Plot	Distribution and density
-Box Plot	Spread and potential outliers
-
-Choosing the correct visualization depends on the type of data and the question we want to answer.
-
-32. Overall EDA Workflow
-
-The practical work can be summarized as:
-
-Load Dataset
-      ↓
-Create DataFrame
-      ↓
-Inspect Data
-      ↓
-df.head()
-      ↓
-df.shape
-      ↓
-df.info()
-      ↓
-df.describe()
-      ↓
-Understand Data Types
-      ↓
-EDA
-      ↓
-Univariate Analysis
-      ↓
-Bivariate Analysis
-      ↓
-Multivariate Analysis
-      ↓
-Visualization
-      ↓
-Histograms / Bins
-      ↓
-Bar Charts
-      ↓
-Violin Plots
-      ↓
-Outlier Analysis
-      ↓
-Temperature & Humidity
-      ↓
-Interpret Insights
-33. AI/ML and Agriculture
-
-The agricultural practical demonstrated how data can be used to understand conditions related to crop selection.
-
-Agricultural parameters such as:
-
-Soil/Nutrient Conditions
-        +
-Temperature
-        +
-Humidity
-        +
-pH
-        +
-Rainfall
-        ↓
-Crop Recommendation Analysis
+```
+Soil/Nutrient Conditions + Temperature + Humidity + pH + Rainfall
+                              ↓
+                  Crop Recommendation Analysis
+```
 
 This shows how data analytics and machine learning can be applied to real-world domains such as agriculture.
 
-34. Key Concepts Covered in the Practical
+---
 
-The practical brought together several important data-analysis concepts.
+## 16. Key Pandas Commands Reference
 
-DataFrame
-
-A table-like data structure used by Pandas to store and analyze data.
-
-df.info()
-
-Provides structural information about the dataset.
-
-df.describe()
-
-Provides statistical summaries of numerical data.
-
-df.shape
-
-Returns the number of rows and columns.
-
-Histogram
-
-Shows the distribution of numerical values.
-
-Bin
-
-A numerical interval used to group values in a histogram.
-
-Bar Chart
-
-Used mainly to compare categorical values.
-
-Violin Plot
-
-Shows the distribution and density of numerical data.
-
-Outlier
-
-An unusually distant observation that requires investigation.
-
-35. Important Pandas Commands Covered
+```python
 import pandas as pd
-
 
 df = pd.read_csv("dataset.csv")
 
+df              # view DataFrame
+df.head()       # first rows
+df.tail()       # last rows
+df.shape        # (rows, columns)
+df.info()       # structure & data types
+df.describe()   # statistical summary
+```
 
-df
-df.head()
-df.tail()
+---
 
+## Quick Revision
 
-df.shape
+### EDA
+```
+EDA → Understand the Dataset → Check Structure → Check Statistics
+    → Visualize Data → Find Patterns → Find Relationships
+    → Identify Outliers → Generate Insights
+```
 
+### Analysis Types
+- **Univariate** → One variable → Analyze individual distribution
+- **Bivariate** → Two variables → Analyze relationships
+- **Multivariate** → Multiple variables → Analyze complex relationships
 
-df.info()
+### Visualization
+- **Bar Chart** → Categorical comparison
+- **Histogram** → Numerical distribution
+- **Bins** → Numerical ranges in a histogram
+- **Violin Plot** → Distribution + density
+- **Box Plot** → Spread + potential outliers
 
+### LLM Concepts
 
-df.describe()
+```
+Language Model → Learns patterns from data
+              → Parameters are adjusted during training
+              → Learned parameters represent patterns
+              → Model can make predictions / generate output
+```
 
-These commands form some of the basic building blocks of dataset exploration using Pandas.
+- **LLM** — Large Language Model
+- **SLM** — Small Language Model
+- **Parameter** — An internal value adjusted during model training to help the model learn patterns
 
-36. Quick Revision — EDA
-EDA
-↓
-Understand the Dataset
-↓
-Check Structure
-↓
-Check Statistics
-↓
-Visualize Data
-↓
-Find Patterns
-↓
-Find Relationships
-↓
-Identify Outliers
-↓
-Generate Insights
-37. Quick Revision — Analysis Types
-Univariate
-→ One variable
-→ Analyze individual distribution
+### LLM vs SLM
 
+| Feature | SLM | LLM |
+|---|---|---|
+| Full Form | Small Language Model | Large Language Model |
+| Model Size | Smaller | Larger |
+| Parameters | Fewer | More |
+| Resource Requirement | Generally lower | Generally higher |
+| Use | Lightweight/specific applications | More complex language tasks |
 
-Bivariate
-→ Two variables
-→ Analyze relationships
+**Key idea:** Model size and parameters relate to potential capacity, but more parameters alone do not guarantee better performance.
 
+---
 
-Multivariate
-→ Multiple variables
-→ Analyze complex relationships
-38. Quick Revision — Visualization
-Bar Chart
-→ Categorical comparison
+## Final Session Takeaways
 
+- **Language Models** learn patterns from data and use those patterns to generate or predict language.
+- **Parameters** are internal values adjusted during training that allow a model to learn patterns.
+- **SLMs** provide a more lightweight alternative to large models.
+- **Data Analytics** requires understanding the dataset before drawing conclusions.
+- **Pandas** provides powerful tools for inspecting and analyzing structured data.
+- **EDA** helps discover patterns, distributions, relationships, and unusual observations.
+- **Visualization** — different charts suit different data types and questions.
+- **Outliers** should be investigated rather than automatically removed.
+- **Agriculture** — data analytics can support crop recommendation and decision-making.
 
-Histogram
-→ Numerical distribution
+---
 
+## Final Revision Sheet
 
-Bins
-→ Numerical ranges in a histogram
+| Topic | Remember |
+|---|---|
+| Language Model | Learns patterns from language data |
+| LLM | Large Language Model |
+| SLM | Small Language Model |
+| Parameter | Internal value adjusted during training |
+| Model Capacity | Ability to represent complex patterns |
+| Crop Recommendation | Practical agricultural data-analysis task |
+| Pandas | Python library for data analysis |
+| DataFrame | Table-like data structure |
+| `df` | DataFrame containing the dataset |
+| `df.head()` | First rows |
+| `df.tail()` | Last rows |
+| `df.shape` | Rows and columns |
+| `df.info()` | Dataset structure and data types |
+| `df.describe()` | Statistical summary |
+| EDA | Exploratory Data Analysis |
+| Univariate | One variable |
+| Bivariate | Two variables |
+| Multivariate | Multiple variables |
+| Bar Chart | Categorical comparison |
+| Histogram | Numerical distribution |
+| Bin | Numerical range in a histogram |
+| Violin Plot | Distribution and density |
+| Outlier | Unusually distant observation |
+| Temperature | Outliers identified/analyzed |
+| Humidity | Outliers identified/analyzed |
 
+---
 
-Violin Plot
-→ Distribution + density
+## Complete Practical Flow
 
-
-Box Plot
-→ Spread + potential outliers
-39. Quick Revision — LLM Concepts
-Language Model
-      ↓
-Learns patterns from data
-      ↓
-Parameters are adjusted during training
-      ↓
-Learned parameters represent patterns
-      ↓
-Model can make predictions / generate output
-LLM
-
-Large Language Model
-
-SLM
-
-Small Language Model
-
-Parameter
-
-An internal value adjusted during model training to help the model learn patterns.
-
-40. LLM vs SLM
-Feature	SLM	LLM
-Full Form	Small Language Model	Large Language Model
-Model Size	Smaller	Larger
-Parameters	Fewer	More
-Resource Requirement	Generally lower	Generally higher
-Use	Lightweight/specific applications	More complex language tasks
-
-The session's key idea was that model size and parameters are related to the model's potential capacity, but more parameters alone do not guarantee better performance.
-
-41. Final Session Takeaways
-Language Models
-
-Language models learn patterns from data and use those learned patterns to generate or predict language.
-
-Parameters
-
-Parameters are internal values adjusted during training that allow a model to learn patterns.
-
-SLM
-
-Small Language Models provide a more lightweight alternative to large models.
-
-Data Analytics
-
-Data analysis requires understanding the dataset before drawing conclusions.
-
-Pandas
-
-Pandas provides powerful tools for inspecting and analyzing structured data.
-
-EDA
-
-Exploratory Data Analysis helps discover patterns, distributions, relationships, and unusual observations.
-
-Visualization
-
-Different charts are appropriate for different types of data and analytical questions.
-
-Outliers
-
-Unusual values should be investigated rather than automatically removed.
-
-Agriculture
-
-Data analytics can be applied to agricultural parameters to support crop recommendation and decision-making.
-
-42. Final Revision Sheet
-Topic	Remember
-Language Model	Learns patterns from language data
-LLM	Large Language Model
-SLM	Small Language Model
-Parameter	Internal value adjusted during training
-Model Capacity	Ability to represent complex patterns
-Crop Recommendation	Practical agricultural data-analysis task
-Pandas	Python library for data analysis
-DataFrame	Table-like data structure
-df	DataFrame containing the dataset
-df.head()	First rows
-df.tail()	Last rows
-df.shape	Rows and columns
-df.info()	Dataset structure and data types
-df.describe()	Statistical summary
-EDA	Exploratory Data Analysis
-Univariate	One variable
-Bivariate	Two variables
-Multivariate	Multiple variables
-Bar Chart	Categorical comparison
-Histogram	Numerical distribution
-Bin	Numerical range in a histogram
-Violin Plot	Distribution and density
-Outlier	Unusually distant observation
-Temperature	Outliers identified/analyzed
-Humidity	Outliers identified/analyzed
-43. Complete Practical Flow
+```
                     CROP RECOMMENDATION ANALYSIS
                               │
                               ↓
@@ -1038,3 +578,4 @@ Humidity	Outliers identified/analyzed
                        Interpret Insights
                               ↓
                     Crop Recommendation
+```

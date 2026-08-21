@@ -1,9 +1,29 @@
 # Data Analytics — Day 1
 
-**Date:** 13 August 2026
 **Program:** VOIS FOR TECH LD AICTE Internship Program
 **Session:** Data Analytics — Day 1
+**Date:** 13 August 2026
 **Mode:** Live Lecture
+
+---
+
+## Table of Contents
+
+1. [Introduction to Data Analytics](#1-introduction-to-data-analytics)
+2. [Data Analytics Process](#2-data-analytics-process)
+3. [Primary and Secondary Data](#3-primary-and-secondary-data)
+4. [ETL](#4-etl)
+5. [Four Types of Data Analytics](#5-four-types-of-data-analytics)
+6. [Descriptive Analytics](#6-descriptive-analytics)
+7. [Diagnostic Analytics](#7-diagnostic-analytics)
+8. [Predictive Analytics](#8-predictive-analytics)
+9. [Prescriptive Analytics](#9-prescriptive-analytics)
+10. [Role of a Data Analyst](#11-role-of-a-data-analyst)
+11. [Data Analyst vs Data Scientist vs Data Engineer](#13-data-analyst-vs-data-scientist-vs-data-engineer)
+12. [Practical — Employee Attrition Analysis](#15-practical--employee-attrition-analysis)
+13. [Outliers & IQR Technique](#27-outliers)
+14. [LLMs in Data Analytics](#30-llms-in-data-analytics)
+15. [Final Revision Sheet](#39-final-revision-sheet)
 
 ---
 
@@ -11,59 +31,49 @@
 
 Data analytics is the process of examining data to understand what is happening, why it is happening, what may happen next, and what action should be taken.
 
-The important point from the session was:
-
 > Data analytics is not just about creating charts. The goal is to understand what the data means and use it to make better decisions.
 
 ### Business Example — Factory Machine
 
-Imagine a factory machine suddenly stops.
+Imagine a factory machine suddenly stops:
 
-* Machine stops.
-* Production stops.
-* Production loss occurs.
-* Money and profit are lost.
+- Machine stops.
+- Production stops.
+- Production loss occurs.
+- Money and profit are lost.
 
-Without analytics, the organization may only realize the problem after the machine has already failed.
-
-With analytics, sensors can continuously provide machine data. If abnormal vibration is detected, maintenance can be performed before the machine completely fails.
-
-Therefore:
+Without analytics, the organization may only realize the problem after the machine has already failed. With analytics, sensors can continuously provide machine data — if abnormal vibration is detected, maintenance can be performed before the machine completely fails.
 
 > Analytics helps identify problems early so that action can be taken before a major loss occurs.
 
 ### Phone Battery Analogy
 
-Analytics can be compared to a phone's battery warning.
+Analytics can be compared to a phone's battery warning:
 
-For example:
+- 20% → Plug in your charger.
+- 15% → Warning.
+- 5% → Urgent warning.
+- 0% → Phone dies.
 
-* 20% → Plug in your charger.
-* 15% → Warning.
-* 5% → Urgent warning.
-* 0% → Phone dies.
+The warning gives us time to take action. Similarly, analytics can provide information such as:
 
-The warning gives us time to take action.
-
-Similarly, analytics can provide information such as:
-
-* Profit percentage
-* Loss percentage
-* Customer success rate
-* Quarterly losses
-* Business performance indicators
+- Profit percentage
+- Loss percentage
+- Customer success rate
+- Quarterly losses
+- Business performance indicators
 
 The purpose is to identify problems and opportunities early.
 
 ---
 
-# 2. Data Analytics Process
+## 2. Data Analytics Process
 
 A key point from the lecture was that data analytics should **start with a question**, not simply with a dataset.
 
 ### Basic Process
 
-```text
+```
 Understand the Problem
         ↓
 Collect Relevant Data
@@ -81,97 +91,75 @@ Take Action
 
 ### Example — Student Performance
 
-Instead of simply saying:
-
-> "Let's analyze the student data."
-
-We should ask a meaningful question:
+Instead of simply saying: *"Let's analyze the student data,"* we should ask a meaningful question:
 
 > "Why are students failing in mathematics?"
 
-Now the analysis has a specific purpose.
+Now the analysis has a specific purpose. Suppose a visualization shows a large percentage of students failing mathematics — possible actions could include:
 
-After analyzing the data, suppose a visualization shows that a large percentage of students are failing mathematics.
+- Extra classes
+- Remedial teaching
+- One-to-one sessions
+- Additional guidance
+- Identifying specific areas where students are struggling
 
-Possible actions could include:
-
-* Extra classes
-* Remedial teaching
-* One-to-one sessions
-* Additional guidance
-* Identifying specific areas where students are struggling
-
-The goal of analytics is therefore not simply to generate information.
-
-It is:
+The goal of analytics is therefore not simply to generate information. It is:
 
 > **Data → Insight → Decision → Action**
 
 ---
 
-# 3. Primary and Secondary Data
+## 3. Primary and Secondary Data
 
-## Primary Data
+### Primary Data
 
 Primary data is data that **we collect ourselves** for a specific purpose.
 
-### Example
+**Example:** Create a Google Form asking *"How many students use AI tools?"* — the responses collected are **primary data**.
 
-Create a Google Form asking:
-
-> "How many students use AI tools?"
-
-The responses collected from that form are **primary data**.
-
-## Secondary Data
+### Secondary Data
 
 Secondary data is data that **someone else has already collected** and made available.
 
-### Examples
-
-* Government datasets
-* Population datasets
-* Existing reports
-* Public databases
-* Existing research/data sources
+**Examples:**
+- Government datasets
+- Population datasets
+- Existing reports
+- Public databases
+- Existing research/data sources
 
 ### Easy Definition
 
 > **Primary = I collect it.**
 > **Secondary = Someone already collected it.**
 
-| Type           | Meaning                           | Example               |
-| -------------- | --------------------------------- | --------------------- |
-| Primary Data   | Collected by us                   | Google Form responses |
-| Secondary Data | Already collected by someone else | Government dataset    |
+| Type | Meaning | Example |
+|---|---|---|
+| Primary Data | Collected by us | Google Form responses |
+| Secondary Data | Already collected by someone else | Government dataset |
 
 ---
 
-# 4. ETL
+## 4. ETL
 
-## ETL = Extract, Transform, Load
+**ETL = Extract, Transform, Load**
 
 ETL is a process used to prepare raw data before it is used for analytics.
 
 ### Extract
 
 Collect or retrieve the raw data.
-
-Example:
-
-> Collect sensor data from an IoT machine.
+*Example: Collect sensor data from an IoT machine.*
 
 ### Transform
 
-Clean and modify the data so it can be used.
+Clean and modify the data so it can be used. This may include:
 
-This may include:
-
-* Cleaning data
-* Handling missing values
-* Changing formats
-* Transforming values
-* Organizing data
+- Cleaning data
+- Handling missing values
+- Changing formats
+- Transforming values
+- Organizing data
 
 ### Load
 
@@ -179,9 +167,7 @@ Store the transformed data in a location where it can be used for analysis.
 
 ### Food Preparation Analogy
 
-The instructor explained ETL using food preparation.
-
-```text
+```
 Extract
 Get the ingredients
         ↓
@@ -194,7 +180,7 @@ Put the final food on the plate
 
 Similarly:
 
-```text
+```
 Raw Data
    ↓
 Extract
@@ -206,15 +192,11 @@ Load
 Analytics
 ```
 
-### Simple Definition
-
 > **ETL prepares messy/raw data before serving it into analytics.**
 
 ---
 
-# 5. Four Types of Data Analytics
-
-There are four main types of data analytics:
+## 5. Four Types of Data Analytics
 
 1. Descriptive Analytics
 2. Diagnostic Analytics
@@ -223,118 +205,80 @@ There are four main types of data analytics:
 
 ### Easy Way to Remember
 
-| Type             | Question           |
-| ---------------- | ------------------ |
-| **Descriptive**  | What happened?     |
-| **Diagnostic**   | Why did it happen? |
-| **Predictive**   | What might happen? |
-| **Prescriptive** | What should I do?  |
+| Type | Question |
+|---|---|
+| **Descriptive** | What happened? |
+| **Diagnostic** | Why did it happen? |
+| **Predictive** | What might happen? |
+| **Prescriptive** | What should I do? |
 
 ---
 
-# 6. Descriptive Analytics
+## 6. Descriptive Analytics
 
-Descriptive analytics tells us:
-
-> **What happened?**
+Descriptive analytics tells us: **What happened?**
 
 It describes past or current data.
 
 ### Example — College Placements
 
-Suppose:
-
-```text
+```
 CSE         → 85%
 ECE         → 82%
 Mechanical  → 78%
 ```
 
-This tells us what happened.
-
-Common visualization methods include:
-
-* Bar charts
-* Line charts
-* Dashboards
+This tells us what happened. Common visualization methods include bar charts, line charts, and dashboards.
 
 ### Screen-Time Example
 
-Suppose your phone says:
-
-> "You spent 6 hours 32 minutes on your phone today."
-
-The data is telling you what happened.
-
-Therefore, this is **descriptive analytics**.
+Suppose your phone says: *"You spent 6 hours 32 minutes on your phone today."* The data is telling you what happened — this is **descriptive analytics**.
 
 ---
 
-# 7. Diagnostic Analytics
+## 7. Diagnostic Analytics
 
-Diagnostic analytics asks:
-
-> **Why did it happen?**
+Diagnostic analytics asks: **Why did it happen?**
 
 It investigates the possible reasons or root causes behind a problem.
 
 ### Example — College Placement
 
-Suppose:
+Suppose college placement percentage decreased (the observed problem). Diagnostic analysis investigates possible reasons:
 
-> College placement percentage decreased.
-
-This is the observed problem.
-
-Diagnostic analysis investigates why it happened.
-
-Possible reasons:
-
-* Fewer companies visited.
-* Students lacked required skills.
-* Fewer students were eligible.
-* Interview performance was poor.
-
-Therefore:
+- Fewer companies visited.
+- Students lacked required skills.
+- Fewer students were eligible.
+- Interview performance was poor.
 
 > Descriptive tells us the problem; diagnostic begins the investigation into why it happened.
 
 ### Phone Battery Example
 
-Suppose your phone battery is draining quickly.
+If your phone battery drains quickly, diagnostic analysis might investigate:
 
-Diagnostic analysis might investigate:
-
-* Excessive phone usage
-* Gaming
-* Heavy applications
-* Battery health
-* Possible malware/virus
-* Background activity
+- Excessive phone usage
+- Gaming
+- Heavy applications
+- Battery health
+- Possible malware/virus
+- Background activity
 
 The goal is to identify the root cause.
 
 ---
 
-# 8. Predictive Analytics
+## 8. Predictive Analytics
 
-Predictive analytics asks:
-
-> **What might happen?**
+Predictive analytics asks: **What might happen?**
 
 It uses historical and current data to estimate possible future outcomes.
 
-### Important Point
-
-Prediction is **not 100% certain**.
-
-It means estimating what is likely to happen based on available data.
+> **Important:** Prediction is not 100% certain — it means estimating what is likely to happen based on available data.
 
 ### Machine Example
 
-Suppose:
-
-```text
+```
 Monday     → Normal vibration
 Tuesday    → Normal vibration
 Wednesday  → Increasing vibration
@@ -342,62 +286,42 @@ Wednesday  → Increasing vibration
 
 If the vibration continues increasing, machine failure may become more likely.
 
-Therefore, analytics can predict a possible future failure.
-
 ### Other Examples
 
-**Amazon:**
-
-> What might you buy next?
-
-**Netflix:**
-
-> What movie might you watch next?
-
-These are examples of predictive analytics.
-
-### Key Point
+- **Amazon:** What might you buy next?
+- **Netflix:** What movie might you watch next?
 
 > Predictive analytics estimates likely outcomes; it does not guarantee the future with 100% certainty.
 
 ---
 
-# 9. Prescriptive Analytics
+## 9. Prescriptive Analytics
 
-Prescriptive analytics asks:
-
-> **What should I do?**
+Prescriptive analytics asks: **What should I do?**
 
 It goes beyond predicting a possible outcome and recommends an action.
 
 ### Machine Example
 
-Predictive:
-
-> "The machine may fail tomorrow."
-
-Prescriptive:
-
-> "Schedule maintenance tonight."
+- **Predictive:** "The machine may fail tomorrow."
+- **Prescriptive:** "Schedule maintenance tonight."
 
 ### Road Example
 
-If analytics predicts that Road A will become congested, it can recommend:
-
-> Take Road B instead.
+If analytics predicts Road A will become congested, it can recommend: *Take Road B instead.*
 
 Prescriptive analytics can involve:
 
-* Optimization
-* Decision support
-* Recommendations
-* Recommended actions
+- Optimization
+- Decision support
+- Recommendations
+- Recommended actions
 
 ---
 
-# 10. Four Types — Quick Revision
+## 10. Four Types — Quick Revision
 
-```text
+```
 Descriptive  → What happened?
 Diagnostic   → Why did it happen?
 Predictive   → What might happen?
@@ -406,7 +330,7 @@ Prescriptive → What should I do?
 
 ### Example
 
-```text
+```
 Machine vibration increased.
         ↓
 Descriptive:
@@ -424,152 +348,104 @@ Schedule maintenance tonight.
 
 ---
 
-# 11. Role of a Data Analyst
+## 11. Role of a Data Analyst
 
-The instructor emphasized that the job of a Data Analyst is **not simply to create many charts**.
+The job of a Data Analyst is **not simply to create many charts**. Creating 20 charts does not automatically make someone a good Data Analyst.
 
-Creating 20 charts does not automatically make someone a good Data Analyst.
+The important part is being able to explain: **What do these charts actually mean?**
 
-The important part is being able to explain:
-
-> **What do these charts actually mean?**
-
-The main responsibility discussed was:
-
-> **Find and explain insights from data.**
+> Main responsibility: **Find and explain insights from data.**
 
 A Data Analyst should be able to communicate the meaning of the analysis to decision-makers.
 
 ---
 
-# 12. Skills Required for a Data Analyst
+## 12. Skills Required for a Data Analyst
 
-Important skills discussed:
-
-* SQL
-* Python / R
-* Statistics
-* Data Visualization
-* Communication
-* Curiosity
-* Problem Solving
+- SQL
+- Python / R
+- Statistics
+- Data Visualization
+- Communication
+- Curiosity
+- Problem Solving
 
 AI tools such as ChatGPT, Gemini, and other LLM-based tools can assist with analysis, but they do not replace the fundamental skills of a Data Analyst.
 
 ---
 
-# 13. Data Analyst vs Data Scientist vs Data Engineer
+## 13. Data Analyst vs Data Scientist vs Data Engineer
 
-## Data Analyst
-
-Main responsibility:
-
+### Data Analyst
 > Find and explain insights from data.
 
-Focus:
+Focus: Data analysis, visualization, reporting, business insights.
 
-* Data analysis
-* Visualization
-* Reporting
-* Business insights
-
-## Data Scientist
-
-Main responsibility:
-
+### Data Scientist
 > Build advanced predictive models.
 
-Focus:
+Focus: Predictive modeling, machine learning, advanced analytics.
 
-* Predictive modeling
-* Machine learning
-* Advanced analytics
-
-## Data Engineer
-
-Main responsibility:
-
+### Data Engineer
 > Build data pipelines and infrastructure.
 
-Focus:
-
-* Data pipelines
-* Data infrastructure
-* Data processing
+Focus: Data pipelines, data infrastructure, data processing.
 
 ### Comparison
 
-| Role           | Main Responsibility                     |
-| -------------- | --------------------------------------- |
-| Data Analyst   | Find and explain insights               |
-| Data Scientist | Build advanced predictive models        |
-| Data Engineer  | Build data pipelines and infrastructure |
+| Role | Main Responsibility |
+|---|---|
+| Data Analyst | Find and explain insights |
+| Data Scientist | Build advanced predictive models |
+| Data Engineer | Build data pipelines and infrastructure |
 
 ---
 
-# 14. Career Perspective
+## 14. Career Perspective
 
-The instructor emphasized that students should not think:
-
-> "I am a CSE student, so I must become a software developer."
-
-There are multiple career paths in technology.
+Students should not think: *"I am a CSE student, so I must become a software developer."* There are multiple career paths in technology.
 
 Students should develop transferable abilities such as:
 
-* Logical thinking
-* Problem decomposition
-* Mathematical thinking
-* System thinking
+- Logical thinking
+- Problem decomposition
+- Mathematical thinking
+- System thinking
 
 A degree does not limit someone to a single technology role.
 
 ---
 
-# 15. Practical — Employee Attrition Analysis
-
-The practical session focused on an **Employee Attrition Analysis** dataset.
+## 15. Practical — Employee Attrition Analysis
 
 ### Dataset
 
-The dataset contained:
-
-* **1,480 employee records**
-* **38 columns**
+- **1,480 employee records**
+- **38 columns**
 
 ### Business Problem
-
-The main problem statement was:
 
 > **Why are employees leaving the organization, and which employee characteristics or workplace factors are associated with higher employee attrition?**
 
 HR may have hundreds or thousands of employees but may not clearly understand:
 
-* Which employees are more likely to leave?
-* Which departments have higher attrition?
-* Does overtime influence employee leaving?
-* Does salary influence attrition?
-* Does job satisfaction matter?
-* Which jobs have higher employee turnover?
-* Does work-life balance influence attrition?
-* Do less-experienced employees leave more frequently?
-* What workplace factors are associated with employee attrition?
+- Which employees are more likely to leave?
+- Which departments have higher attrition?
+- Does overtime influence employee leaving?
+- Does salary influence attrition?
+- Does job satisfaction matter?
+- Which jobs have higher employee turnover?
+- Does work-life balance influence attrition?
+- Do less-experienced employees leave more frequently?
+- What workplace factors are associated with employee attrition?
 
 Data analytics can help HR understand these patterns and improve the employee environment.
 
 ---
 
-# 16. Google Colab
+## 16. Google Colab
 
-The practical was performed using **Google Colab**.
-
-Google Colab provides a Python environment that can be used for:
-
-* Python programming
-* Data analysis
-* Machine learning
-
-One advantage discussed was that users can work with Python through Colab without needing to install Python locally for the basic workflow.
+The practical was performed using **Google Colab**, which provides a Python environment for Python programming, data analysis, and machine learning — without needing to install Python locally for the basic workflow.
 
 ### Opening Colab
 
@@ -583,54 +459,31 @@ One advantage discussed was that users can work with Python through Colab withou
 
 ---
 
-# 17. Importing Pandas
-
-Pandas was used for data analysis.
+## 17. Importing Pandas
 
 ```python
 import pandas as pd
-```
 
-A CSV file can be loaded into a DataFrame using:
-
-```python
 df = pd.read_csv("dataset.csv")
 ```
 
-Here:
-
-* `pd` represents Pandas.
-* `df` represents the DataFrame.
+- `pd` represents Pandas.
+- `df` represents the DataFrame.
 
 ---
 
-# 18. Understanding the Dataset
-
-Before performing analysis, we first need to understand the data.
-
-## First Five Rows
+## 18. Understanding the Dataset
 
 ```python
-df.head()
+df.head()   # first few rows
+df.tail()   # last few rows
 ```
-
-This displays the first few rows.
-
-## Last Five Rows
-
-```python
-df.tail()
-```
-
-This displays the last few rows.
 
 These commands help us inspect the beginning and end of the dataset.
 
 ---
 
-# 19. Dataset Shape
-
-To determine the number of rows and columns:
+## 19. Dataset Shape
 
 ```python
 df.shape
@@ -638,51 +491,38 @@ df.shape
 
 The practical dataset returned:
 
-```text
+```
 (1480, 38)
 ```
 
-Meaning:
-
-* **1480 rows**
-* **38 columns**
+Meaning **1480 rows** and **38 columns**.
 
 ---
 
-# 20. Indexing
+## 20. Indexing
 
-Python indexing starts from **0**.
-
-Both positive and negative indexes can be used to access data.
-
-The instructor demonstrated accessing rows and columns using indexes.
+Python indexing starts from **0**. Both positive and negative indexes can be used to access data. The instructor demonstrated accessing rows and columns using indexes.
 
 ---
 
-# 21. Statistical Information
-
-To obtain statistical information about the dataset:
+## 21. Statistical Information
 
 ```python
 df.describe()
 ```
 
-This provides statistical information for numerical data, including values such as:
+Provides statistical information for numerical data, including:
 
-* Count
-* Mean
-* Standard deviation
-* Minimum
-* Quartiles
-* Maximum
+- Count
+- Mean
+- Standard deviation
+- Minimum
+- Quartiles
+- Maximum
 
 ---
 
-# 22. Null / Missing Values
-
-Missing values need to be identified during data cleaning.
-
-To check null values:
+## 22. Null / Missing Values
 
 ```python
 df.isnull().sum()
@@ -690,63 +530,46 @@ df.isnull().sum()
 
 This gives the number of null values in each column.
 
-The practical demonstrated identifying columns containing missing values and discussed filling missing values using appropriate methods.
-
-Depending on the data, techniques such as **mean** or **mode** may be used.
+The practical demonstrated identifying columns containing missing values and discussed filling missing values using appropriate methods (e.g. **mean** or **mode**, depending on the data).
 
 ---
 
-# 23. Dataset Information
-
-To obtain information about all columns:
+## 23. Dataset Information
 
 ```python
 df.info()
 ```
 
-This provides information such as:
+Provides information such as:
 
-* Column names
-* Non-null counts
-* Data types
-* Number of entries
-* Memory usage
+- Column names
+- Non-null counts
+- Data types
+- Number of entries
+- Memory usage
 
-The instructor discussed different data types including:
-
-* Integer
-* Float
-* Object/String
-* Categorical data
+Data types discussed included: Integer, Float, Object/String, Categorical data.
 
 ---
 
-# 24. Numerical and Categorical Columns
+## 24. Numerical and Categorical Columns
 
 The dataset contained:
 
-* **26 numerical columns**
-* **12 categorical/string columns**
+- **26 numerical columns**
+- **12 categorical/string columns**
 
 Understanding data types is important because different types of data require different analysis techniques.
 
 ---
 
-# 25. Data Distribution
+## 25. Data Distribution
 
-The practical demonstrated creating histograms/distributions for numerical features.
-
-The purpose of a distribution plot is to understand how values are spread across a dataset.
-
-Selected numerical columns can be analyzed separately rather than analyzing every column at once.
+The practical demonstrated creating histograms/distributions for numerical features to understand how values are spread across a dataset. Selected numerical columns can be analyzed separately rather than analyzing every column at once.
 
 ---
 
-# 26. Selecting Specific Columns
-
-Specific columns can be selected for focused analysis.
-
-Example:
+## 26. Selecting Specific Columns
 
 ```python
 selected_columns = [
@@ -758,29 +581,21 @@ selected_columns = [
 df1 = df[selected_columns]
 ```
 
-Now `df1` contains only the selected columns.
-
-This allows analysis to focus on specific variables.
+Now `df1` contains only the selected columns, allowing analysis to focus on specific variables.
 
 ---
 
-# 27. Outliers
+## 27. Outliers
 
-An **outlier** is a data point that is unusually far away from the general pattern of the dataset.
+An **outlier** is a data point that is unusually far away from the general pattern of the dataset. Outliers can affect analysis and therefore may need to be investigated.
 
-Outliers can affect analysis and therefore may need to be investigated.
-
-### Example
-
-The instructor demonstrated checking columns such as monthly income for possible outliers.
+**Example:** The instructor demonstrated checking columns such as monthly income for possible outliers.
 
 ---
 
-# 28. Box Plot
+## 28. Box Plot
 
 A **box plot** can be used to identify potential outliers.
-
-Example:
 
 ```python
 import matplotlib.pyplot as plt
@@ -793,32 +608,28 @@ The box plot helps visually identify values that are unusually high or low.
 
 ---
 
-# 29. IQR Technique
+## 29. IQR Technique
 
-The instructor demonstrated the **Interquartile Range (IQR)** technique for handling outliers.
+The **Interquartile Range (IQR)** technique for handling outliers.
 
 ### Formula
 
-```text
+```
 IQR = Q3 − Q1
 ```
 
-Where:
+Where `Q1` = First Quartile, `Q3` = Third Quartile.
 
-* `Q1` = First Quartile
-* `Q3` = Third Quartile
+### Bounds
 
-A commonly used method for detecting potential outliers is:
-
-```text
+```
 Lower Bound = Q1 − 1.5 × IQR
-
 Upper Bound = Q3 + 1.5 × IQR
 ```
 
 Values outside these boundaries can be considered potential outliers.
 
-The practical demonstrated:
+### Process
 
 1. Identify outliers.
 2. Apply the IQR technique.
@@ -828,172 +639,124 @@ The practical demonstrated:
 
 ---
 
-# 30. LLMs in Data Analytics
-
-The instructor introduced the use of **LLMs** for assisting with data analysis.
-
-## LLM
+## 30. LLMs in Data Analytics
 
 **LLM = Large Language Model**
 
 LLMs can assist with:
 
-* Generating Python code
-* Explaining code
-* Finding possible insights
-* Suggesting analysis techniques
-* Creating visualizations
-* Working with data-analysis prompts
+- Generating Python code
+- Explaining code
+- Finding possible insights
+- Suggesting analysis techniques
+- Creating visualizations
+- Working with data-analysis prompts
 
 The session demonstrated using **Gemini 2.5** as an example.
 
-### Important
-
-AI tools should be treated as assistants.
-
-A Data Analyst still needs to understand:
-
-* The business problem
-* The dataset
-* The analysis
-* The generated code
-* The results
-* Whether the results make sense
+> **Important:** AI tools should be treated as assistants. A Data Analyst still needs to understand the business problem, the dataset, the analysis, the generated code, the results, and whether the results make sense.
 
 ---
 
-# 31. Julius AI
+## 31. Julius AI
 
 Another AI-based data-analysis tool introduced was **Julius AI**.
 
-The instructor demonstrated uploading the same dataset and providing a prompt similar to:
+The instructor demonstrated uploading the same dataset with a prompt similar to:
 
 > "Build our best insights with this dataset and clean the data."
 
 Julius AI can assist with:
 
-* Data cleaning
-* Python code generation
-* Data analysis
-* Visualization
-* Insight generation
-* Dashboards
+- Data cleaning
+- Python code generation
+- Data analysis
+- Visualization
+- Insight generation
+- Dashboards
 
-It can automatically generate Python code and visualizations based on the dataset and prompt.
+It can automatically generate Python code and visualizations based on the dataset and prompt. Julius AI provides a limited number of credits per day.
 
-The session also mentioned that Julius AI provides a limited number of credits per day.
-
-### Important Principle
-
-> AI tools can assist with data analysis, reporting, and narration, but they are not a replacement for a Data Analyst.
+> **Important Principle:** AI tools can assist with data analysis, reporting, and narration, but they are not a replacement for a Data Analyst.
 
 ---
 
-# 32. Attendance Form
+## 32. Attendance Form
 
-Attendance instructions were provided at the end of the session.
-
-Students were asked to fill the attendance form carefully because mistakes had occurred in previous sessions.
+Attendance instructions were provided at the end of the session. Students were asked to fill the attendance form carefully because mistakes had occurred in previous sessions.
 
 ### Information Required
 
-The form included fields such as:
-
-* Full Name
-* AICT Student ID
-* Gender
-* Person with Disability information, where applicable
-* Session Date
-* College Name
-* College State
-* College City
-* Course Name
-* Stream
-* Branch
-* Semester
-* AICT Email ID
-* LMS Email ID
-* Contact Number
-* Feedback
-* Session Rating
+- Full Name
+- AICT Student ID
+- Gender
+- Person with Disability information, where applicable
+- Session Date
+- College Name
+- College State
+- College City
+- Course Name
+- Stream
+- Branch
+- Semester
+- AICT Email ID
+- LMS Email ID
+- Contact Number
+- Feedback
+- Session Rating
 
 ---
 
-# 33. AICT Student ID
+## 33. AICT Student ID
 
-The AICT Student ID can be found by logging into the **AICT portal** and opening the profile section.
-
-The ID begins with:
-
-```text
-STU...
-```
-
-Students need to enter the **complete ID**.
-
-A sample screenshot was also shared during the session to show where the ID could be found.
+The AICT Student ID can be found by logging into the **AICT portal** and opening the profile section. The ID begins with `STU...` — students need to enter the **complete ID**. A sample screenshot was also shared during the session to show where the ID could be found.
 
 ---
 
-# 34. Email Information
-
-The attendance form asks for:
+## 34. Email Information
 
 ### AICT Email ID
-
 The email address used while applying for the AICT internship.
 
 ### LMS Email ID
-
 The email address used for LMS registration.
 
-If the same email was used for both, the same email can be entered.
-
-If different emails were used, the appropriate email should be entered in each field.
+If the same email was used for both, the same email can be entered. If different emails were used, the appropriate email should be entered in each field.
 
 ---
 
-# 35. Attendance Feedback
+## 35. Attendance Feedback
 
-The attendance form also contains feedback questions.
+The attendance form also contains feedback questions, asking students to provide feedback regarding:
 
-Students were asked to provide feedback regarding:
+- Overall session experience
+- Three things they liked about the session
+- Other feedback questions
+- Session rating
 
-* Overall session experience
-* Three things they liked about the session
-* Other feedback questions
-* Session rating
-
-After completing all information:
-
-> Submit the form to confirm attendance.
+After completing all information: **Submit the form to confirm attendance.**
 
 ---
 
-# 36. Session Task
-
-The task given at the end of the session was to:
+## 36. Session Task
 
 1. Explore the Data Analytics elements.
 2. Complete the relevant Data Analytics certificates.
 3. Explore the available learning material.
 4. Continue learning before the next session.
 
-The instructor mentioned that the certificate link would be shared.
-
-Students were encouraged to explore as much of the material as possible.
+The instructor mentioned that the certificate link would be shared. Students were encouraged to explore as much of the material as possible.
 
 ---
 
-# 37. Key Takeaways
+## 37. Key Takeaways
 
 ### Data Analytics
-
 > Data analytics helps turn data into useful insights that support decisions and actions.
 
 ### Analytics Process
 
-```text
+```
 Question
    ↓
 Data
@@ -1011,20 +774,20 @@ Action
 
 ### Primary vs Secondary
 
-```text
+```
 Primary   → I collect
 Secondary → Someone already collected
 ```
 
 ### ETL
 
-```text
+```
 Extract → Transform → Load
 ```
 
 ### Four Types
 
-```text
+```
 Descriptive  → What happened?
 Diagnostic   → Why did it happen?
 Predictive   → What might happen?
@@ -1033,7 +796,7 @@ Prescriptive → What should I do?
 
 ### Career Roles
 
-```text
+```
 Data Analyst
 → Find and explain insights
 
@@ -1046,7 +809,7 @@ Data Engineer
 
 ### Practical Workflow
 
-```text
+```
 Upload Dataset
       ↓
 Import Libraries
@@ -1078,7 +841,7 @@ Insights
 
 ---
 
-# 38. Important Commands Covered
+## 38. Important Commands Covered
 
 ```python
 import pandas as pd
@@ -1109,33 +872,31 @@ plt.show()
 
 ---
 
-# 39. Final Revision Sheet
+## 39. Final Revision Sheet
 
-| Topic                      | Remember                                 |
-| -------------------------- | ---------------------------------------- |
-| Data Analytics             | Turning data into insights for decisions |
-| Primary Data               | Data collected by us                     |
-| Secondary Data             | Data already collected by someone else   |
-| ETL                        | Extract → Transform → Load               |
-| Descriptive                | What happened?                           |
-| Diagnostic                 | Why did it happen?                       |
-| Predictive                 | What might happen?                       |
-| Prescriptive               | What should I do?                        |
-| Data Analyst               | Finds and explains insights              |
-| Data Scientist             | Builds advanced predictive models        |
-| Data Engineer              | Builds data pipelines/infrastructure     |
-| `head()`                   | First rows                               |
-| `tail()`                   | Last rows                                |
-| `shape`                    | Rows and columns                         |
-| `describe()`               | Statistical summary                      |
-| `isnull().sum()`           | Null-value count                         |
-| `info()`                   | Dataset/column information               |
-| Box Plot                   | Identify potential outliers              |
-| IQR                        | Outlier detection/handling technique     |
-| LLM                        | Large Language Model                     |
-| Julius AI                  | AI-assisted data analysis tool           |
-| Dataset                    | 1,480 rows × 38 columns                  |
-| Numerical Columns          | 26                                       |
-| Categorical/String Columns | 12                                       |
-
----
+| Topic | Remember |
+|---|---|
+| Data Analytics | Turning data into insights for decisions |
+| Primary Data | Data collected by us |
+| Secondary Data | Data already collected by someone else |
+| ETL | Extract → Transform → Load |
+| Descriptive | What happened? |
+| Diagnostic | Why did it happen? |
+| Predictive | What might happen? |
+| Prescriptive | What should I do? |
+| Data Analyst | Finds and explains insights |
+| Data Scientist | Builds advanced predictive models |
+| Data Engineer | Builds data pipelines/infrastructure |
+| `head()` | First rows |
+| `tail()` | Last rows |
+| `shape` | Rows and columns |
+| `describe()` | Statistical summary |
+| `isnull().sum()` | Null-value count |
+| `info()` | Dataset/column information |
+| Box Plot | Identify potential outliers |
+| IQR | Outlier detection/handling technique |
+| LLM | Large Language Model |
+| Julius AI | AI-assisted data analysis tool |
+| Dataset | 1,480 rows × 38 columns |
+| Numerical Columns | 26 |
+| Categorical/String Columns | 12 |

@@ -1,5 +1,5 @@
 # Large Language Models & Data Analytics — Day 2
-<br>
+
 **Program:** VOIS FOR TECH LD AICTE Internship Program<br>
 **Session:** Data Analytics — Day 2<br>
 **Date:** 20 August 2026<br>

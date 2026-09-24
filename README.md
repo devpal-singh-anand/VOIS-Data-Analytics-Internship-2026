@@ -113,7 +113,8 @@ VOIS-Data-Analytics-Internship-2026/
 └── VOIS_TIRTC/
     └── Live/
         ├── 17th_September_2026.md
-        └── 18th_September_2026.md
+        ├── 18th_September_2026.md
+        └── 24th_September_2026.md
 ```
 
 ## AICTE
@@ -243,10 +244,11 @@ Together, these projects demonstrate the practical application of concepts cover
 
 The `VOIS_TIRTC/` directory contains the TIRTC integrated sessions.
 
-| File                             | Session                                                        |
-| -------------------------------- | -------------------------------------------------------------- |
-| `Live/17th_September_2026.md`    | Healthcare Analytics for Doctor Visits DIY Project and IBM Bob |
-| `Live/18th_September_2026.md`    | AI Fundamentals, IBM Bob Roles, and IBM Learning Plan Courses  |
+| File                             | Session                                                                    |
+| -------------------------------- | -------------------------------------------------------------------------- |
+| `Live/17th_September_2026.md`    | Healthcare Analytics for Doctor Visits DIY Project and IBM Bob             |
+| `Live/18th_September_2026.md`    | AI Fundamentals, IBM Bob Roles, and IBM Learning Plan Courses              |
+| `Live/24th_September_2026.md`    | DIY Project Submission Walkthrough, PPT Guidelines, and Doubt-Clearing Session |
 
 ## License
 

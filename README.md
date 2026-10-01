@@ -32,13 +32,13 @@ The goal is to maintain a structured record of the internship journey — from l
 **Start Date:** 10 August 2026<br>
 **End Date:** 10 September 2026
 
-| Week   | Date        | Focus                                                                               |
-| ------ | ----------- | ----------------------------------------------------------------------------------- |
-| Week 0 | 10 Aug 2026 | Orientation, LMS registration, and internship schedule                              |
-| Week 1 | 13 Aug 2026 | Introduction to Data Analytics, overview of AI and LLMs, HR data analysis hands-on  |
-| Week 2 | 20 Aug 2026 | Agriculture data analysis, Data Visualization course and hands-on                   |
-| Week 3 | 27 Aug 2026 | Business and Operations data analysis, project discussion                           |
-| Week 4 | 3 Sep 2026  | Project completion and submission, submission discussion, final Q&A                 |
+| Week   | Date        | Focus                                                                              |
+| ------ | ----------- | ---------------------------------------------------------------------------------- |
+| Week 0 | 10 Aug 2026 | Orientation, LMS registration, and internship schedule                             |
+| Week 1 | 13 Aug 2026 | Introduction to Data Analytics, overview of AI and LLMs, HR data analysis hands-on |
+| Week 2 | 20 Aug 2026 | Agriculture data analysis, Data Visualization course and hands-on                  |
+| Week 3 | 27 Aug 2026 | Business and Operations data analysis, project discussion                          |
+| Week 4 | 3 Sep 2026  | Project completion and submission, submission discussion, final Q&A                |
 
 ## Repository Purpose
 
@@ -114,7 +114,8 @@ VOIS-Data-Analytics-Internship-2026/
     └── Live/
         ├── 17th_September_2026.md
         ├── 18th_September_2026.md
-        └── 24th_September_2026.md
+        ├── 24th_September_2026.md
+        └── 01st_October_2026.md
 ```
 
 ## AICTE
@@ -163,13 +164,13 @@ Live/
 └── 10th_September_2026.md
 ```
 
-| File                     | Session                                                                       |
-| ------------------------ | ----------------------------------------------------------------------------- |
-| `10th_August_2026.md`    | **Day 0** — Orientation, LMS Registration, and Internship Schedule            |
-| `13th_August_2026.md`    | **Day 1** — Introduction to Data Analytics                                    |
-| `20th_August_2026.md`    | **Day 2** — Large Language Models, Parameters, and Crop Recommendation EDA    |
-| `27th_August_2026.md`    | **Day 3** — Airbnb Dataset Walkthrough and Project Discussion                 |
-| `3rd_September_2026.md`  | **Day 4** — Unicorn Companies Dataset and Major Project Briefing              |
+| File                     | Session                                                                                 |
+| ------------------------ | --------------------------------------------------------------------------------------- |
+| `10th_August_2026.md`    | **Day 0** — Orientation, LMS Registration, and Internship Schedule                      |
+| `13th_August_2026.md`    | **Day 1** — Introduction to Data Analytics                                              |
+| `20th_August_2026.md`    | **Day 2** — Large Language Models, Parameters, and Crop Recommendation EDA              |
+| `27th_August_2026.md`    | **Day 3** — Airbnb Dataset Walkthrough and Project Discussion                           |
+| `3rd_September_2026.md`  | **Day 4** — Unicorn Companies Dataset and Major Project Briefing                        |
 | `10th_September_2026.md` | **Final Session** — Doubt Session, Major Project Guidance, and Food Delivery Case Study |
 
 Each session document contains session metadata and a breakdown of what was covered. The technical sessions (Day 1 to Day 4 and the Final Session) also include the practical work and a revision section summarizing important terms and takeaways.
@@ -219,10 +220,10 @@ The project applies data analysis and visualization techniques to transform raw 
 
 **Submission deadline:** 20 September 2026
 
-| File                                                        | Purpose                                                                                 |
-| ----------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| `Devpal's Seasonal_Agriculture_Performance_Analysis.ipynb`  | Jupyter notebook containing the complete analysis and code                              |
-| `Devpal's Seasonal_Agriculture_Performance_Analysis.pptx`   | Presentation containing the methodology, visualizations, key observations, and findings |
+| File                                                       | Purpose                                                                                 |
+| ---------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| `Devpal's Seasonal_Agriculture_Performance_Analysis.ipynb` | Jupyter notebook containing the complete analysis and code                              |
+| `Devpal's Seasonal_Agriculture_Performance_Analysis.pptx`  | Presentation containing the methodology, visualizations, key observations, and findings |
 
 ### Projects Overview
 
@@ -244,11 +245,12 @@ Together, these projects demonstrate the practical application of concepts cover
 
 The `VOIS_TIRTC/` directory contains the TIRTC integrated sessions.
 
-| File                             | Session                                                                    |
-| -------------------------------- | -------------------------------------------------------------------------- |
-| `Live/17th_September_2026.md`    | Healthcare Analytics for Doctor Visits DIY Project and IBM Bob             |
-| `Live/18th_September_2026.md`    | AI Fundamentals, IBM Bob Roles, and IBM Learning Plan Courses              |
-| `Live/24th_September_2026.md`    | DIY Project Submission Walkthrough, PPT Guidelines, and Doubt-Clearing Session |
+| File                          | Session                                                                        |
+| ----------------------------- | ------------------------------------------------------------------------------ |
+| `Live/17th_September_2026.md` | Healthcare Analytics for Doctor Visits DIY Project and IBM Bob                 |
+| `Live/18th_September_2026.md` | AI Fundamentals, IBM Bob Roles, and IBM Learning Plan Courses                  |
+| `Live/24th_September_2026.md` | DIY Project Submission Walkthrough, PPT Guidelines, and Doubt-Clearing Session |
+| `Live/01st_October_2026.md`   | TIRTC Session Documentation — 1st October 2026                                 |
 
 ## License
 

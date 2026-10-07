@@ -26,10 +26,10 @@ The goal is to maintain a structured record of the internship journey — from l
 
 ## Internship
 
-**Program:** VOIS and Vodafone Idea Foundation Data Analytics Internship Program<br>
-**Facilitated by:** Edunet Foundation<br>
-**Duration:** 4 Weeks<br>
-**Start Date:** 10 August 2026<br>
+**Program:** VOIS and Vodafone Idea Foundation Data Analytics Internship Program
+**Facilitated by:** Edunet Foundation
+**Duration:** 4 Weeks
+**Start Date:** 10 August 2026
 **End Date:** 10 September 2026
 
 | Week   | Date        | Focus                                                                              |
@@ -111,11 +111,14 @@ VOIS-Data-Analytics-Internship-2026/
 │   └── Devpal's_Car_Market_Trends_Analysis_CarDekho.pptx
 │
 └── VOIS_TIRTC/
-    └── Live/
-        ├── 17th_September_2026.md
-        ├── 18th_September_2026.md
-        ├── 24th_September_2026.md
-        └── 01st_October_2026.md
+    ├── Expert Talks/
+    │   └── 07th_October_2026.md
+    ├── Live/
+    │   ├── 17th_September_2026.md
+    │   ├── 18th_September_2026.md
+    │   ├── 24th_September_2026.md
+    │   └── 01st_October_2026.md
+    └── Project Submission/
 ```
 
 ## AICTE
@@ -243,7 +246,11 @@ Together, these projects demonstrate the practical application of concepts cover
 
 ## TIRTC
 
-The `VOIS_TIRTC/` directory contains the TIRTC integrated sessions.
+The `VOIS_TIRTC/` directory contains documentation from TIRTC integrated sessions, project-related activities, and expert-led learning initiatives.
+
+### Live Sessions
+
+The `VOIS_TIRTC/Live/` directory contains notes and documentation from TIRTC sessions.
 
 | File                          | Session                                                                        |
 | ----------------------------- | ------------------------------------------------------------------------------ |
@@ -251,6 +258,28 @@ The `VOIS_TIRTC/` directory contains the TIRTC integrated sessions.
 | `Live/18th_September_2026.md` | AI Fundamentals, IBM Bob Roles, and IBM Learning Plan Courses                  |
 | `Live/24th_September_2026.md` | DIY Project Submission Walkthrough, PPT Guidelines, and Doubt-Clearing Session |
 | `Live/01st_October_2026.md`   | TIRTC Session Documentation — 1st October 2026                                 |
+
+### Expert Talks Initiative
+
+The `VOIS_TIRTC/Expert Talks/` directory documents expert talks conducted as part of the TIRTC initiative. These sessions provide industry perspectives on applying analytical concepts, choosing appropriate tools, and connecting data analysis with business decisions.
+
+#### From Data to Decisions: Foundation, Tools & Business Analytics
+
+**Date:** 7 October 2026
+**Speaker:** Anil Pandey, VP – Commercial, Vodafone Idea Limited
+
+The session explored how data analytics supports business decision-making, emphasizing problem definition, tool selection, data quality, and evidence-backed recommendations.
+
+Key takeaways:
+
+* Define the business problem before beginning an analysis.
+* Develop a deeper understanding of tools instead of relying only on surface-level familiarity.
+* Choose tools according to the problem being solved.
+* Validate findings and account for data quality before drawing conclusions.
+* Remember that association does not establish causation.
+* Connect analytical findings to practical business decisions.
+
+**Session documentation:** `VOIS_TIRTC/Expert Talks/07th_October_2026.md`
 
 ## License
 

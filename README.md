@@ -1,12 +1,11 @@
 # VOIS & Vodafone Idea Foundation — Data Analytics Internship
 
-![GitHub repo size](https://img.shields.io/github/repo-size/devpal-singh-anand/VOIS-Data-Analytics-Internship-2026)
-![GitHub last commit](https://img.shields.io/github/last-commit/devpal-singh-anand/VOIS-Data-Analytics-Internship-2026)
-![GitHub contributors](https://img.shields.io/github/contributors/devpal-singh-anand/VOIS-Data-Analytics-Internship-2026)
-![GitHub stars](https://img.shields.io/github/stars/devpal-singh-anand/VOIS-Data-Analytics-Internship-2026?style=social)
-![GitHub license](https://img.shields.io/github/license/devpal-singh-anand/VOIS-Data-Analytics-Internship-2026)
 
-> Documentation, coursework, live-session notes, and project submissions from the **VOIS and Vodafone Idea Foundation Data Analytics Internship Program**, facilitated by **Edunet Foundation**.
+
+
+\
+
+> Documentation, coursework, live-session notes, expert-talk insights, and project submissions from the **VOIS and Vodafone Idea Foundation Data Analytics Internship Program**, facilitated by **Edunet Foundation**.
 
 ## About
 
@@ -21,6 +20,7 @@ The repository brings together:
 * Live-session documentation
 * Minor project submission
 * Major project submission
+* TIRTC project submission and expert-talk documentation
 
 The goal is to maintain a structured record of the internship journey — from learning the fundamentals to applying data analytics concepts through practical projects.
 
@@ -50,6 +50,7 @@ It brings together:
 2. **Live Sessions** — Lecture notes, practical demonstrations, project discussions, and revision material
 3. **Minor Project** — Used Vehicle Market Trends Analysis using the CarDekho dataset
 4. **Major Project** — Seasonal Agriculture Performance Analysis
+5. **TIRTC Activities** — Integrated sessions, project submission documentation, and expert talks
 
 The repository is maintained as a structured learning and project portfolio, with an emphasis on **understanding concepts, applying them practically, and documenting the work clearly**.
 
@@ -119,6 +120,8 @@ VOIS-Data-Analytics-Internship-2026/
     │   ├── 24th_September_2026.md
     │   └── 01st_October_2026.md
     └── Project Submission/
+        ├── Devpal_Singh_Charanjeet_Singh_Anand_HealthCare_Analytics_Doctor_Visits_TIRTC.ipynb
+        └── Devpal_Singh_Charanjeet_Singh_Anand_HealthCare_Analytics_Doctor_Visits_TIRTC.pptx
 ```
 
 ## AICTE
@@ -203,7 +206,7 @@ The analysis uses **Exploratory Data Analysis (EDA)** and statistical techniques
 
 ### Major Project Submission
 
-The `Major Project Submission/` directory contains the internship's **major project**:
+The `Major Project Submission/` directory contains the internship's **major project**.
 
 #### Seasonal Agriculture Performance Analysis
 
@@ -246,7 +249,7 @@ Together, these projects demonstrate the practical application of concepts cover
 
 ## TIRTC
 
-The `VOIS_TIRTC/` directory contains documentation from TIRTC integrated sessions, project-related activities, and expert-led learning initiatives.
+The `VOIS_TIRTC/` directory contains documentation from TIRTC integrated sessions, project submissions, and expert-led learning initiatives.
 
 ### Live Sessions
 
@@ -280,6 +283,31 @@ Key takeaways:
 * Connect analytical findings to practical business decisions.
 
 **Session documentation:** `VOIS_TIRTC/Expert Talks/07th_October_2026.md`
+
+### Project Submission — Healthcare Analytics for Doctor Visits
+
+The `VOIS_TIRTC/Project Submission/` directory contains the TIRTC project submission **Healthcare Analytics for Doctor Visits**.
+
+The project analyzes a dataset of **5,190 patient records** to investigate patterns in doctor visits and healthcare utilization. It examines how visit frequency varies with illness severity, chronic conditions, and other patient characteristics.
+
+The analysis uses Python, combining exploratory data analysis and statistical testing to investigate differences across patient groups and derive evidence-based observations.
+
+The project focuses on:
+
+* Examining the distribution and frequency of doctor visits.
+* Comparing healthcare utilization across patient groups.
+* Investigating patterns associated with illness severity and chronic conditions.
+* Applying statistical methods to assess observed differences.
+* Translating analytical findings into evidence-based observations.
+
+#### Submission Files
+
+| File                                                                                 | Purpose                                                                    |
+| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| `Devpal_Singh_Charanjeet_Singh_Anand_HealthCare_Analytics_Doctor_Visits_TIRTC.ipynb` | Jupyter notebook containing the project's analysis and code                |
+| `Devpal_Singh_Charanjeet_Singh_Anand_HealthCare_Analytics_Doctor_Visits_TIRTC.pptx`  | Presentation depicting the project, analysis, visualizations, and findings |
+
+This submission is maintained separately from the AICTE major and minor projects as part of the TIRTC activities.
 
 ## License
 

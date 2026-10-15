@@ -1,12 +1,5 @@
 # VOIS & Vodafone Idea Foundation — Data Analytics Internship
 
-
-
-
-\
-
-> Documentation, coursework, live-session notes, expert-talk insights, and project submissions from the **VOIS and Vodafone Idea Foundation Data Analytics Internship Program**, facilitated by **Edunet Foundation**.
-
 ## About
 
 This repository documents my learning and project work completed during the **VOIS and Vodafone Idea Foundation Data Analytics Internship Program**.
@@ -26,10 +19,10 @@ The goal is to maintain a structured record of the internship journey — from l
 
 ## Internship
 
-**Program:** VOIS and Vodafone Idea Foundation Data Analytics Internship Program
-**Facilitated by:** Edunet Foundation
-**Duration:** 4 Weeks
-**Start Date:** 10 August 2026
+**Program:** VOIS and Vodafone Idea Foundation Data Analytics Internship Program  
+**Facilitated by:** Edunet Foundation  
+**Duration:** 4 Weeks  
+**Start Date:** 10 August 2026  
 **End Date:** 10 September 2026
 
 | Week   | Date        | Focus                                                                              |
@@ -63,38 +56,31 @@ VOIS-Data-Analytics-Internship-2026/
 ├── README.md
 │
 ├── VOIS_AICTE/
+│   ├── Certificate/
+│   │   └── VOIS AICTE CERTIFICATION.pdf
+│   │
 │   ├── Linux-and-Data-Analytics/
 │   │   ├── 01-Basic/
 │   │   │   ├── Data Analytics/
 │   │   │   │   ├── Track01-Getting-Started-with-Python-Environment-Installations/
-│   │   │   │   ├── Track02-Getting-Started-with-Basics-of-Python/
-│   │   │   │   ├── Track03-Building-Blocks-of-Python/
-│   │   │   │   ├── Track04-Getting-Started-with-Operations-on-Strings/
-│   │   │   │   ├── Track05-Getting-Started-with-Sequenced-Data-Types/
-│   │   │   │   └── Track06-Getting-Started-with-Class-and-Objects/
-│   │   │   └── Linux/
-│   │   │       ├── Track01-Basics-of-Linux-Operating-System/
-│   │   │       ├── Track02-Linux-System-Utilities/
-│   │   │       └── Track03-Getting-Started-with-Linux-File-System/
+│   │   │   ├── Track02-Getting-Started-with-Basics-of-Python/
+│   │   │   ├── Track03-Building-Blocks-of-Python/
+│   │   │   ├── Track04-Getting-Started-with-Operations-on-Strings/
+│   │   │   ├── Track05-Getting-Started-with-Sequenced-Data-Types/
+│   │   │   └── Track06-Getting-Started-with-Class-and-Objects/
+│   │   │
 │   │   ├── 02-Intermediate/
 │   │   │   ├── Data Analytics/
 │   │   │   │   ├── Track07-Getting-Started-with-File-Handling/
 │   │   │   │   ├── Track08-Data-Analytics-Using-NumPy/
 │   │   │   │   └── Track09-Data-Visualization/
-│   │   │   └── Linux/
-│   │   │       ├── Track04-Linux-Administration/
-│   │   │       ├── Track05-Linux-Vi-Text-Editors/
-│   │   │       └── Track06-Permissions-Management/
+│   │   │
 │   │   └── 03-Advanced/
 │   │       ├── Data Analytics/
 │   │       │   ├── Track10-GUI-Interface-Tkinter/
 │   │       │   ├── Track11-Data-Analysis-Using-Pandas/
 │   │       │   └── Track12-Embedded-Python/
-│   │       └── Linux/
-│   │           ├── Track07-Learn-GREP-on-Linux/
-│   │           ├── Track08-Process-Management/
-│   │           ├── Track09-Advance-Shell-Scripting/
-│   │           └── Track10-Linux-Networking/
+│   │
 │   └── Live/
 │       ├── 10th_August_2026.md
 │       ├── 13th_August_2026.md
@@ -114,11 +100,14 @@ VOIS-Data-Analytics-Internship-2026/
 └── VOIS_TIRTC/
     ├── Expert Talks/
     │   └── 07th_October_2026.md
+    │
     ├── Live/
+    │   ├── 01st_October_2026.md
+    │   ├── 15th_October_2026.md
     │   ├── 17th_September_2026.md
     │   ├── 18th_September_2026.md
-    │   ├── 24th_September_2026.md
-    │   └── 01st_October_2026.md
+    │   └── 24th_September_2026.md
+    │
     └── Project Submission/
         ├── Devpal_Singh_Charanjeet_Singh_Anand_HealthCare_Analytics_Doctor_Visits_TIRTC.ipynb
         └── Devpal_Singh_Charanjeet_Singh_Anand_HealthCare_Analytics_Doctor_Visits_TIRTC.pptx
@@ -261,6 +250,7 @@ The `VOIS_TIRTC/Live/` directory contains notes and documentation from TIRTC ses
 | `Live/18th_September_2026.md` | AI Fundamentals, IBM Bob Roles, and IBM Learning Plan Courses                  |
 | `Live/24th_September_2026.md` | DIY Project Submission Walkthrough, PPT Guidelines, and Doubt-Clearing Session |
 | `Live/01st_October_2026.md`   | TIRTC Session Documentation — 1st October 2026                                 |
+| `Live/15th_October_2026.md`  | Cardiovascular Data Analysis — EDA Walkthrough                                 |
 
 ### Expert Talks Initiative
 
@@ -268,7 +258,7 @@ The `VOIS_TIRTC/Expert Talks/` directory documents expert talks conducted as par
 
 #### From Data to Decisions: Foundation, Tools & Business Analytics
 
-**Date:** 7 October 2026
+**Date:** 7 October 2026  
 **Speaker:** Anil Pandey, VP – Commercial, Vodafone Idea Limited
 
 The session explored how data analytics supports business decision-making, emphasizing problem definition, tool selection, data quality, and evidence-backed recommendations.
